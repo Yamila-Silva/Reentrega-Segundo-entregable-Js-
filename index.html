@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta online de agendas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Agendas Disponibles</h1>
+
+        <div id="nombre-form-container">
+            <form id="nombre-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+
+        <div id="bienvenida"></div>
+
+        <div id="agendas" class="agendas-container"></div>
+
+        <div id="carrito" style="display: none;">
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito-lista"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="aceptar-compra">Aceptar Compra</button>
+        </div>
+
+        <div id="mensaje-final"></div>
+    </div>
+
+    <script src="./ventadeagendas.js"></script>
+</body>
+
+</html>
